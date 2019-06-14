@@ -1,0 +1,136 @@
+	<html>
+<head>
+<title>IHatePollen.com - A community fighting for the rights of people with sensitive immune systems!</title>
+<style>
+body {
+  font-family: Helvetica, sans-serif;
+}
+.header {
+  /*background: #1abc9c;
+  background-image: url("https://www.pollen.com/Content/articles/info/what-is-allergy.jpg");*/
+  background-image: url("https://www.pollen.com/Content/articles/info/ai-grass-pollens.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 50px; /* tbh idk */
+  text-align: center;
+}
+.header h1 { /* Font size of the header gets bigger */
+  font-size: 40px;
+}
+  
+/* Navigation bar */
+.navbar {
+  background-color:  #003300; /*#333;*/
+  overflow: hidden; /* Hide overflow */
+ 
+}
+/* Navigation bar links */
+.navbar a {
+  float: right; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white;
+  text-align: center;
+  padding: 14px 20px; /* Adds padding??? idk */
+  text-decoration: none; /* No underline??? */
+}
+  
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #99cc00; /*#86b300; /*#d9ff66;/*#b3ff66; /*#ddd; (put this in comments)Grey background color */
+  color: black; /* Black text color */
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+
+</style>
+</head>
+<body>
+  
+<div class="navbar">
+  <a href="https://derekwlee.github.io/csp-final-project-quiz-2019/">Quizzes</a>
+  <a href="#">Stories</a>
+  <a href="https://derekwlee.github.io/csp-final-project-news-2019/">News</a> <!--include something about ariana grande-->
+  <a href="https://derekwlee.github.io/csp-final-project-about-2019/">About Us</a> <!--include a contact-us-->
+  <a href="https://derekwlee.github.io/csp-final-project-2019/">Home</a>
+</div>  
+  
+  <div class="header">
+    <h1>Pollen, NO!</h1>
+    <h3>Support the fight against seasonal allergies!</h3>
+  </div>
+  
+<div class="stories">
+<h2>IHatePollen Story Page</h2>
+
+  <h4>Stories:</h4>
+  <button class="collapsible">An Allergy Story by Eldana Tecleab 6/13/19</button>
+  <div class="content">
+    <p>"I actually got allergies after playing in some grass as a kid. I was a stupid little kid, my mom let me outside. I was in the backyard with my younger brother Kiddus playing.
+And while I was playing in the grass, I was wearing short sleeves and shorts while rolling around. When I got inside my mother looked at the hives and rashes I got on my arms and legs.
+Around the same time I got an asthma attack.... love that! A little two year old unable to breathe! Wow!" - Eldana Tecleab. Interview during First Lunch
+  </div>
+</div>
+	
+<div class="poems">
+     <h4>Poems:</h4>
+  <button class="collapsible">I Hate My Allergies (A Poem) 6/13/19</button>
+    <div class="content">
+	    <p>"I hate my allergies</p>
+	<p>Because of my allergies</p>
+	<p>They make me sneeze</p>
+	<p>I feel bad for bees</p>
+	<p>If I were a bee</p>
+	<p>Save me please</p>
+	    <p>I hate my allergies"</p>
+	    <p> - Anonymous
+</div>
+
+    </div>
+	</div>
+  
+   
+  
+  
+  <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</div>
+
+</body>
+</html>
